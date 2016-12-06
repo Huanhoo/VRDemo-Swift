@@ -2,7 +2,7 @@
 ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 ***
 ##简介
-VRDemo用Swift语言实现的360度全景播放器。效果如下：
+VRDemo是用Swift配合OpenGL ES实现的360度全景播放器，效果如下：
 
 
 ![demo](https://github.com/Huanhoo/VRDemo-Swift/blob/master/demo.gif)
