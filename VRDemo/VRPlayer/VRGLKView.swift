@@ -148,7 +148,7 @@ class VRGLKView: GLKView, GLKViewDelegate {
         glBufferData(GLenum(GL_ARRAY_BUFFER), Int(numVertices!)*3*MemoryLayout<GLfloat>.size, vertices, GLenum(GL_STATIC_DRAW))
         
         glEnableVertexAttribArray(GLuint(GLKVertexAttrib.position.rawValue))
-        glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), 3*GLsizei(MemoryLayout<GLfloat>.size), nil)
+        glVertexAttribPointer(GLuint(GLKVertexAttrib.position.rawValue), 3, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.size*3), nil)
         
         // Texture Coordinates
         var tempVertexTexCoordID: GLuint = 0
@@ -158,7 +158,7 @@ class VRGLKView: GLKView, GLKViewDelegate {
         glBufferData(GLenum(GL_ARRAY_BUFFER), Int(numVertices!)*2*MemoryLayout<GLfloat>.size, textCoord, GLenum(GL_DYNAMIC_DRAW))
         
         glEnableVertexAttribArray(vertexTexCoordAttributeIndex);
-        glVertexAttribPointer(vertexTexCoordAttributeIndex, 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.size), nil);
+        glVertexAttribPointer(vertexTexCoordAttributeIndex, 2, GLenum(GL_FLOAT), GLboolean(GL_FALSE), GLsizei(MemoryLayout<GLfloat>.size*2), nil);
         
     }
     
