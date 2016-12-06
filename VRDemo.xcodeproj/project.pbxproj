@@ -121,8 +121,8 @@
 				8966B34E1DF6691F0056C727 /* Main.storyboard */,
 				8966B3511DF6691F0056C727 /* Assets.xcassets */,
 				8966B3531DF6691F0056C727 /* LaunchScreen.storyboard */,
-				8966B3851DF669610056C727 /* Shader.fsh */,
 				8966B3861DF669610056C727 /* Shader.vsh */,
+				8966B3851DF669610056C727 /* Shader.fsh */,
 				8966B3871DF669610056C727 /* demo.m4v */,
 				8966B3561DF6691F0056C727 /* Info.plist */,
 			);
@@ -562,6 +562,7 @@
 				8966B3711DF6691F0056C727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8966B3721DF6691F0056C727 /* Build configuration list for PBXNativeTarget "VRDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +571,7 @@
 				8966B3741DF6691F0056C727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8966B3751DF6691F0056C727 /* Build configuration list for PBXNativeTarget "VRDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +580,7 @@
 				8966B3771DF6691F0056C727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
