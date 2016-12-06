@@ -14,6 +14,14 @@
 		8966B3551DF6691F0056C727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8966B3531DF6691F0056C727 /* LaunchScreen.storyboard */; };
 		8966B3601DF6691F0056C727 /* VRDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966B35F1DF6691F0056C727 /* VRDemoTests.swift */; };
 		8966B36B1DF6691F0056C727 /* VRDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966B36A1DF6691F0056C727 /* VRDemoUITests.swift */; };
+		8966B3801DF6693D0056C727 /* VRPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966B37A1DF6693D0056C727 /* VRPlayer.swift */; };
+		8966B3811DF6693D0056C727 /* VKGLTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966B37B1DF6693D0056C727 /* VKGLTexture.swift */; };
+		8966B3821DF6693D0056C727 /* VRGLKView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966B37C1DF6693D0056C727 /* VRGLKView.swift */; };
+		8966B3831DF6693D0056C727 /* VRProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8966B37D1DF6693D0056C727 /* VRProgram.swift */; };
+		8966B3841DF6693D0056C727 /* EsGenSphere.c in Sources */ = {isa = PBXBuildFile; fileRef = 8966B37E1DF6693D0056C727 /* EsGenSphere.c */; };
+		8966B3881DF669610056C727 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 8966B3851DF669610056C727 /* Shader.fsh */; };
+		8966B3891DF669610056C727 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 8966B3861DF669610056C727 /* Shader.vsh */; };
+		8966B38A1DF669610056C727 /* demo.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 8966B3871DF669610056C727 /* demo.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,16 @@
 		8966B3661DF6691F0056C727 /* VRDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8966B36A1DF6691F0056C727 /* VRDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRDemoUITests.swift; sourceTree = "<group>"; };
 		8966B36C1DF6691F0056C727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8966B3791DF6693D0056C727 /* VRDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VRDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		8966B37A1DF6693D0056C727 /* VRPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRPlayer.swift; sourceTree = "<group>"; };
+		8966B37B1DF6693D0056C727 /* VKGLTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKGLTexture.swift; sourceTree = "<group>"; };
+		8966B37C1DF6693D0056C727 /* VRGLKView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRGLKView.swift; sourceTree = "<group>"; };
+		8966B37D1DF6693D0056C727 /* VRProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRProgram.swift; sourceTree = "<group>"; };
+		8966B37E1DF6693D0056C727 /* EsGenSphere.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = EsGenSphere.c; sourceTree = "<group>"; };
+		8966B37F1DF6693D0056C727 /* EsGenSphere.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EsGenSphere.h; sourceTree = "<group>"; };
+		8966B3851DF669610056C727 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		8966B3861DF669610056C727 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
+		8966B3871DF669610056C727 /* demo.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +115,15 @@
 		8966B3491DF6691F0056C727 /* VRDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8966B3781DF669360056C727 /* VRPlayer */,
 				8966B34A1DF6691F0056C727 /* AppDelegate.swift */,
 				8966B34C1DF6691F0056C727 /* ViewController.swift */,
 				8966B34E1DF6691F0056C727 /* Main.storyboard */,
 				8966B3511DF6691F0056C727 /* Assets.xcassets */,
 				8966B3531DF6691F0056C727 /* LaunchScreen.storyboard */,
+				8966B3851DF669610056C727 /* Shader.fsh */,
+				8966B3861DF669610056C727 /* Shader.vsh */,
+				8966B3871DF669610056C727 /* demo.m4v */,
 				8966B3561DF6691F0056C727 /* Info.plist */,
 			);
 			path = VRDemo;
@@ -123,6 +145,20 @@
 				8966B36C1DF6691F0056C727 /* Info.plist */,
 			);
 			path = VRDemoUITests;
+			sourceTree = "<group>";
+		};
+		8966B3781DF669360056C727 /* VRPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8966B37A1DF6693D0056C727 /* VRPlayer.swift */,
+				8966B37B1DF6693D0056C727 /* VKGLTexture.swift */,
+				8966B37C1DF6693D0056C727 /* VRGLKView.swift */,
+				8966B37D1DF6693D0056C727 /* VRProgram.swift */,
+				8966B37E1DF6693D0056C727 /* EsGenSphere.c */,
+				8966B37F1DF6693D0056C727 /* EsGenSphere.h */,
+				8966B3791DF6693D0056C727 /* VRDemo-Bridging-Header.h */,
+			);
+			path = VRPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +230,7 @@
 					8966B3461DF6691F0056C727 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8XN6237JCM;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					8966B35A1DF6691F0056C727 = {
@@ -235,9 +272,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8966B3881DF669610056C727 /* Shader.fsh in Resources */,
 				8966B3551DF6691F0056C727 /* LaunchScreen.storyboard in Resources */,
 				8966B3521DF6691F0056C727 /* Assets.xcassets in Resources */,
 				8966B3501DF6691F0056C727 /* Main.storyboard in Resources */,
+				8966B38A1DF669610056C727 /* demo.m4v in Resources */,
+				8966B3891DF669610056C727 /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8966B3841DF6693D0056C727 /* EsGenSphere.c in Sources */,
+				8966B3831DF6693D0056C727 /* VRProgram.swift in Sources */,
 				8966B34D1DF6691F0056C727 /* ViewController.swift in Sources */,
+				8966B3811DF6693D0056C727 /* VKGLTexture.swift in Sources */,
 				8966B34B1DF6691F0056C727 /* AppDelegate.swift in Sources */,
+				8966B3801DF6693D0056C727 /* VRPlayer.swift in Sources */,
+				8966B3821DF6693D0056C727 /* VRGLKView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,11 +458,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8XN6237JCM;
 				INFOPLIST_FILE = VRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Huanhoo.VRDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VRDemo/VRPlayer/VRDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -426,11 +474,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8XN6237JCM;
 				INFOPLIST_FILE = VRDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Huanhoo.VRDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VRDemo/VRPlayer/VRDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
