@@ -90,7 +90,7 @@ class VRGLKView: GLKView, GLKViewDelegate {
     func configureGLKView() {
         
         self.drawableDepthFormat = GLKViewDrawableDepthFormat.format24
-        self.contentScaleFactor = UIScreen.main.scale
+        self.contentScaleFactor = 2.0
         self.delegate = self
         self.context = EAGLContext.init(api: EAGLRenderingAPI.openGLES2)
         EAGLContext.setCurrent(self.context)

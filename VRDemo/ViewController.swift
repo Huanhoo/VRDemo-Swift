@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         self.view.addSubview(vrPlayer)
         vrPlayer.translatesAutoresizingMaskIntoConstraints = false
         
+        let size: CGSize = self.view.bounds.size
+        
         let leftConstraint = NSLayoutConstraint(item:vrPlayer,
                                                 attribute:.left,
                                                 relatedBy:.equal,
@@ -44,7 +46,7 @@ class ViewController: UIViewController {
                                                   toItem:nil,
                                                   attribute:.notAnAttribute,
                                                   multiplier:1.0,
-                                                  constant:210);
+                                                  constant:size.width/16*9);
         
         self.view.addConstraints([leftConstraint, rightConstraint, centerYConstraint])
         vrPlayer.addConstraint(heightConstraint)

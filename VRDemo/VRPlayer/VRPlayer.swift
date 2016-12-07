@@ -61,6 +61,8 @@ class VRPlayer: UIView, VRGLKViewDelegate {
         
         self.avPlayer?.play()
         configureOutput()
+        
+        NotificationCenter.default.addObserver(self, selector:#selector(playEnd), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil)
 
     }
     required init?(coder aDecoder: NSCoder) {
@@ -90,6 +92,13 @@ class VRPlayer: UIView, VRGLKViewDelegate {
         //}
         return pixelBuffer;
         
+    }
+    
+    func playEnd() {
+    
+        self.avPlayer?.seek(to: kCMTimeZero)
+        self.avPlayer?.play()
+    
     }
 
 }
