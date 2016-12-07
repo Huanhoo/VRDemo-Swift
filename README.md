@@ -19,7 +19,8 @@ VRDemo-Swift is a 360-degree video player demo which achieved use Swift3.0 and O
 
 ##Requirements
 - iOS 8.0+
-- Swift 3s
+- Swift 3
+
 ##Other
 
 The implementation of VR is roughly same, [HTY360Player](https://github.com/hanton/HTY360Player) is one of the famous 360-degree video player. This demo refers to the implementation of [HTY360Player](https://github.com/hanton/HTY360Player) and [SGMediaKit](https://github.com/0x010101/SGMediaKit), and split out some functional classes, I only implemented the general function of the player. In addition,  [SGMediaKit](https://github.com/0x010101/SGMediaKit) is a VR player made by my friend, it's better than HTY360Player in the eyes of the matrix transformation.
