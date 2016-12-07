@@ -58,10 +58,7 @@ class VRGLKView: GLKView, GLKViewDelegate {
 
     
     internal func glkView(_ view: GLKView, drawIn rect: CGRect) {
-        
-        
-        
-        
+
     }
     
     override func draw(_ rect: CGRect) {
@@ -79,7 +76,7 @@ class VRGLKView: GLKView, GLKViewDelegate {
         var matrix: GLKMatrix4 = GLKMatrix4Identity
         var success: Bool  = matrixWithSize(size:self.bounds.size, matrix:&matrix)
         if success {
-            glViewport(0, 0, GLsizei(rect.width*2), GLsizei(rect.height*2))
+            glViewport(0, 0, GLsizei(rect.width*UIScreen.main.scale), GLsizei(rect.height*UIScreen.main.scale))
             
             glUniformMatrix4fv(GLint(uniform_model_view_projection_matrix), 1, GLboolean(GL_FALSE), matrix.array)
             glDrawElements(GLenum(GL_TRIANGLES), GLsizei(numIndices), GLenum(GL_UNSIGNED_SHORT), nil);
@@ -90,7 +87,7 @@ class VRGLKView: GLKView, GLKViewDelegate {
     func configureGLKView() {
         
         self.drawableDepthFormat = GLKViewDrawableDepthFormat.format24
-        self.contentScaleFactor = 2.0
+        self.contentScaleFactor = UIScreen.main.scale
         self.delegate = self
         self.context = EAGLContext.init(api: EAGLRenderingAPI.openGLES2)
         EAGLContext.setCurrent(self.context)
